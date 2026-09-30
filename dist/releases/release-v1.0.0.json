@@ -1,0 +1,10 @@
+{
+  "slug": "test-senior-sandbox",
+  "version": "v1.0.0",
+  "archiveFilename": "test-senior-sandbox-v1.0.0.tar.gz",
+  "archiveSizeBytes": 1191,
+  "sha256": "44bcb92603c228bedd4da73244701bdb90c66ce80dd34539c7a98c654075cc3b",
+  "filesIncluded": 4,
+  "createdAt": "2026-09-30T16:18:43.470Z",
+  "author": "Felipe Madison (@FelipeMadson)"
+}
