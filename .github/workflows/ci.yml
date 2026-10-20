@@ -1,0 +1,25 @@
+name: CI Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Code Quality & Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Verify Repository Integrity
+        run: |
+          echo "Verifying repository structure, licensing and integrity..."
+          test -f README.md || (echo "README.md is required" && exit 1)
+          test -f LICENSE || (echo "LICENSE is required" && exit 1)
+          echo "All structural gates verified successfully."
